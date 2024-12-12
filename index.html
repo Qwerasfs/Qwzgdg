@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع الحوالات</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>مرحبًا بك في موقع الحوالات</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>إرسال حوالة</h2>
+      <form>
+        <label for="recipientName">اسم المستلم:</label>
+        <input type="text" id="recipientName" name="recipientName" required>
+
+        <label for="amount">المبلغ:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="currency">العملة:</label>
+        <select id="currency" name="currency">
+          <option value="USD">دولار أمريكي</option>
+          <option value="EUR">يورو</option>
+        </select>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>استلام حوالة</h2>
+      <form>
+        <label for="trackingNumber">رقم تتبع الحوالة:</label>
+        <input type="text" id="trackingNumber" name="trackingNumber" required>
+
+        <label for="identity">الهوية الشخصية:</label>
+        <input type="text" id="identity" name="identity" required>
+
+        <button type="submit">استلام</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>صرف العملات النقدية</h2>
+      <form>
+        <label for="amountToExchange">المبلغ المراد صرفه:</label>
+        <input type="number" id="amountToExchange" name="amountToExchange" required>
+
+        <label for="currencyReceived">العملة المستلمة:</label>
+        <select id="currencyReceived" name="currencyReceived">
+          <option value="USD">دولار أمريكي</option>
+          <option value="EUR">يورو</option>
+        </select>
+
+        <button type="submit">صرف</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
